@@ -9,6 +9,7 @@ function withTrailingSlash(path: string): string {
 
 /** Strip every `basePath` prefix (fixes accidental `/minimaxi-demo/minimaxi-demo/...`). */
 function stripBasePath(pathname: string): string {
+  if (!BASE_PATH) return pathname;
   let p = pathname;
   while (true) {
     if (p === BASE_PATH || p === `${BASE_PATH}/`) return "/";
