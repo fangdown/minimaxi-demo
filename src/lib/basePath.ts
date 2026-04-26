@@ -1,11 +1,9 @@
 /**
  * Must match `basePath` in `next.config.ts` (used by middleware redirects).
- * - Vercel: empty so the deployment is served at the project root (e.g. `*.vercel.app/`).
- * - Local: `/minimaxi-demo` to mirror subpath deploys. Override with `NEXT_PUBLIC_BASE_PATH`.
+ * Production and local use the same subpath: `/minimaxi-demo/...` (e.g. `/minimaxi-demo/zh/`).
+ * Set `NEXT_PUBLIC_BASE_PATH` to override (e.g. `""` to serve at domain root).
  */
 export const BASE_PATH =
   process.env.NEXT_PUBLIC_BASE_PATH !== undefined
     ? process.env.NEXT_PUBLIC_BASE_PATH
-    : process.env.VERCEL
-      ? ""
-      : "/minimaxi-demo";
+    : "/minimaxi-demo";
