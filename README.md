@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MiniMax
 
-## Getting Started
+MiniMax 官方网站 Next.js 项目，支持中英文国际化。
 
-First, run the development server:
+## 技术栈
+
+- **框架**: Next.js 16 (App Router)
+- **语言**: TypeScript
+- **样式**: Tailwind CSS 4
+- **国际化**: next-intl
+
+## 开始开发
 
 ```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问 http://localhost:3000 （默认语言为中文）
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 目录结构
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── [locale]/        # 国际化路由
+│   │   ├── about/       # 关于页面
+│   │   ├── careers/     # 招聘页面
+│   │   ├── models/      # 模型页面
+│   │   ├── news/        # 新闻页面
+│   │   └── page.tsx     # 首页
+│   ├── layout.tsx       # 根布局
+│   ├── globals.css      # 全局样式
+│   ├── robots.ts        # SEO
+│   └── sitemap.ts       # 站点地图
+├── components/          # React 组件
+│   ├── home/           # 首页组件
+│   ├── layout/         # 布局组件
+│   ├── news/           # 新闻组件
+│   └── ui/             # UI 组件
+├── data/               # 静态数据
+│   ├── en/             # 英文数据
+│   └── zh/             # 中文数据
+├── hooks/              # 自定义 Hooks
+└── lib/                # 工具函数
+```
 
-## Learn More
+## 功能
 
-To learn more about Next.js, take a look at the following resources:
+- 中英文国际化 (i18n)
+- 响应式设计
+- SEO 优化 (robots.txt, sitemap.xml)
+- 首页轮播展示
+- 产品矩阵展示
+- 音乐卡片滚动
+- 新闻动态页面
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 部署
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+项目使用 Vercel 部署，详情见 [Vercel 部署文档](https://nextjs.org/docs/app/building-your-application/deploying)。
 
-## Deploy on Vercel
+## 相关链接
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [MiniMax 官网](https://www.minimaxi.com)
+- [MiniMax 文档](https://platform.minimaxi.com)
