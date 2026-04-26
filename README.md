@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-访问 http://localhost:3000 （默认语言为中文）
+访问 http://localhost:3000/minimaxi-demo/（未带语言时会重定向到 `/minimaxi-demo/zh/`）
 
 ## 目录结构
 

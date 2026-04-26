@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
+import { BASE_PATH } from "./src/lib/basePath";
 
 const nextConfig: NextConfig = {
-  basePath: "/minimaxi-demo",
+  basePath: BASE_PATH,
   trailingSlash: true,
 };
 

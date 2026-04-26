@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { LocaleHtmlLang } from "@/components/layout/LocaleHtmlLang";
 
 export async function generateMetadata({
   params,
@@ -11,8 +12,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return locale === "en"
-    ? { title: "MiniMax - Co-Creating Intelligence with Everyone", description: "MiniMax is a leading global AGI company" }
-    : { title: "MiniMax - 与所有人共创智能", description: "MiniMax 是一家全球领先的通用人工智能科技公司" };
+    ? {
+        title: "MiniMax - Co-Creating Intelligence with Everyone",
+        description: "MiniMax is a leading global AGI company",
+      }
+    : {
+        title: "MiniMax - 与所有人共创智能",
+        description: "MiniMax 是一家全球领先的通用人工智能科技公司",
+      };
 }
 
 export default async function LocaleLayout({
@@ -29,12 +36,11 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className="h-full antialiased">
-      <body className="min-h-full flex flex-col">
-        <Navbar />
-        <main className="flex-1 pt-[var(--nav-height)]">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <LocaleHtmlLang locale={locale} />
+      <Navbar />
+      <main className="flex-1 pt-[var(--nav-height)]">{children}</main>
+      <Footer />
+    </>
   );
 }

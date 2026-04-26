@@ -6,7 +6,8 @@ export const metadata: Metadata = {
     default: "MiniMax - 与所有人共创智能",
     template: "%s | MiniMax",
   },
-  description: "MiniMax 是一家全球领先的通用人工智能科技公司，致力于与用户共创智能。",
+  description:
+    "MiniMax 是一家全球领先的通用人工智能科技公司，致力于与用户共创智能。",
   metadataBase: new URL("https://www.minimaxi.com"),
   openGraph: {
     type: "website",
@@ -41,5 +42,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <html lang="zh" className="h-full antialiased" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
 }
