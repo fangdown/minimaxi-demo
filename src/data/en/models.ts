@@ -1,0 +1,56 @@
+import type { ModelCard } from "../types";
+
+export const models: ModelCard[] = [
+  {
+    id: "m27",
+    name: "M2.7",
+    category: "Text",
+    description: "Latest text model with Agent Harness and advanced coding capabilities",
+    image: "/images/models/m27.jpg",
+    href: "/models/text/m27",
+    isNew: true,
+  },
+  {
+    id: "music-26",
+    name: "Music 2.6",
+    category: "Music",
+    description: "AI music creation with cover songs and instrumental generation",
+    image: "/images/models/music26.jpg",
+    href: "/models/music/26",
+    isNew: true,
+  },
+  {
+    id: "hailuo-23",
+    name: "Hailuo 2.3",
+    category: "Video",
+    description: "High-quality AI video generation with longer duration and precision",
+    image: "/images/models/hailuo23.jpg",
+    href: "/models/video/23",
+    isNew: true,
+  },
+  {
+    id: "speech-28",
+    name: "Speech 2.8",
+    category: "Speech",
+    description: "Ultra-realistic speech synthesis with human-like warmth",
+    image: "/images/models/speech28.jpg",
+    href: "/models/speech/28",
+    isNew: true,
+  },
+  {
+    id: "m2-her",
+    name: "M2-Her",
+    category: "Text",
+    description: "Conversational model optimized for emotional interaction",
+    image: "/images/models/m2her.jpg",
+    href: "/models/text/m2her",
+  },
+  {
+    id: "mcp-server",
+    name: "MCP Server",
+    category: "Tools",
+    description: "Model Context Protocol service connecting AI with external tools",
+    image: "/images/models/mcp.jpg",
+    href: "/models/mcp",
+  },
+];

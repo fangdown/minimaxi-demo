@@ -1,0 +1,58 @@
+import type { NewsItem } from "../types";
+
+export const news: NewsItem[] = [
+  {
+    slug: "music-26-release",
+    title: "MiniMax Launches Music 2.6: A New Era of AI Music Creation",
+    date: "2025-04-20",
+    tag: "Product Launch",
+    image: "/images/news/music26.jpg",
+    excerpt: "Music 2.6 introduces cover songs, instrumental generation, and deep Agent integration.",
+    content: "MiniMax today officially released the Music 2.6 music model. The new version delivers comprehensive improvements in music generation quality, style diversity, and creative flexibility. Music 2.6 introduces cover song functionality for the first time, allowing users to upload original tracks and create covers in different styles. Instrumental generation capabilities have also been significantly enhanced, supporting solo and ensemble generation for piano, guitar, violin, and more.",
+  },
+  {
+    slug: "m27-launch",
+    title: "M2.7 Released: Self-Evolving Model with Enhanced Agent Harness",
+    date: "2025-04-15",
+    tag: "Tech Breakthrough",
+    image: "/images/news/m27.jpg",
+    excerpt: "M2.7 achieves major breakthroughs in Agent capabilities, code generation, and Office automation.",
+    content: "MiniMax has released its latest-generation text model, M2.7. The model achieves a quantum leap in Agent Harness capabilities, enabling autonomous planning and execution of complex tasks. In code generation, M2.7 reaches industry-leading performance across multiple programming language benchmarks. Additionally, M2.7 features powerful Office automation capabilities for complex document editing, data analysis, and report generation.",
+  },
+  {
+    slug: "annual-report-2025",
+    title: "MiniMax 2025 Annual Performance Report",
+    date: "2025-04-10",
+    tag: "Company News",
+    image: "/images/news/annual.jpg",
+    excerpt: "A review of 2025 technology breakthroughs and business growth, with a look ahead.",
+    content: "MiniMax has released its 2025 annual performance report. The report shows significant technological breakthroughs and business growth over the past year. Global users exceeded 236 million, enterprise clients surpassed 214,000, and services now cover over 200 countries and regions worldwide.",
+  },
+  {
+    slug: "hailuo-23-release",
+    title: "Hailuo 2.3 Released: AI Video Generation Reaches New Heights",
+    date: "2025-03-28",
+    tag: "Product Launch",
+    image: "/images/news/hailuo23.jpg",
+    excerpt: "Hailuo 2.3 delivers comprehensive improvements in video quality, duration, and consistency.",
+    content: "MiniMax has released the Hailuo 2.3 video generation model. The new version achieves significant improvements in video generation quality, maximum duration, and character consistency. Hailuo 2.3 supports generating longer high-quality videos with greatly improved character and scene consistency.",
+  },
+  {
+    slug: "speech-28-release",
+    title: "Speech 2.8: Giving AI Voice a Human Touch",
+    date: "2025-03-20",
+    tag: "Tech Breakthrough",
+    image: "/images/news/speech28.jpg",
+    excerpt: "Speech 2.8 achieves breakthroughs in emotional expression, tonal naturalness, and multilingual support.",
+    content: "MiniMax has released the Speech 2.8 speech synthesis model. The new version achieves major breakthroughs in the richness and naturalness of emotional expression, automatically adjusting tone, pace, and emotion based on text content to give AI voice a truly human touch.",
+  },
+  {
+    slug: "token-plan-launch",
+    title: "MiniMax Platform Launches Token Plan Developer Packages",
+    date: "2025-03-15",
+    tag: "Platform Update",
+    image: "/images/news/tokenplan.jpg",
+    excerpt: "Flexible token billing plans offering cost-effective AI capabilities for developers.",
+    content: "The MiniMax open platform has officially launched Token Plan developer packages. The new billing plans offer both pay-as-you-go and package deal options to meet the needs of developers at every scale. Enterprise clients can also access custom plans.",
+  },
+];

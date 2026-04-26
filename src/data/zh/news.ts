@@ -1,0 +1,58 @@
+import type { NewsItem } from "../types";
+
+export const news: NewsItem[] = [
+  {
+    slug: "music-26-release",
+    title: "MiniMax 发布 Music 2.6：AI 音乐创作迈入新纪元",
+    date: "2025-04-20",
+    tag: "产品发布",
+    image: "/images/news/music26.jpg",
+    excerpt: "Music 2.6 带来 Cover 翻唱、器乐生成等全新能力，与 Agent 深度集成。",
+    content: "MiniMax 今日正式发布 Music 2.6 音乐大模型。新版本在音乐生成质量、风格多样性和创作灵活性上实现了全面提升。Music 2.6 首次支持 Cover 翻唱功能，用户可以上传原曲并选择不同风格进行翻唱。同时，器乐生成能力也得到了显著增强，支持钢琴、吉他、小提琴等多种乐器的独奏和合奏生成。",
+  },
+  {
+    slug: "m27-launch",
+    title: "M2.7 发布：模型自我进化，Agent Harness 能力全面升级",
+    date: "2025-04-15",
+    tag: "技术突破",
+    image: "/images/news/m27.jpg",
+    excerpt: "M2.7 在 Agent 能力、代码生成和 Office 自动化方面实现重大突破。",
+    content: "MiniMax 发布最新一代文本大模型 M2.7。该模型在 Agent Harness 能力上实现了质的飞跃，能够自主规划和执行复杂任务。在代码生成方面，M2.7 在多个编程语言基准测试中达到业界领先水平。此外，M2.7 还具备强大的 Office 自动化能力，能够处理复杂的文档编辑、数据分析和报告生成任务。",
+  },
+  {
+    slug: "annual-report-2025",
+    title: "MiniMax 2025 年全年业绩发布",
+    date: "2025-04-10",
+    tag: "公司动态",
+    image: "/images/news/annual.jpg",
+    excerpt: "回顾 2025 年的技术突破与业务增长，展望未来发展方向。",
+    content: "MiniMax 发布 2025 年全年业绩报告。报告显示，公司在过去一年中实现了显著的技术突破和业务增长。全球用户数突破 2.36 亿，企业客户超过 21.4 万家，服务覆盖全球 200 多个国家和地区。",
+  },
+  {
+    slug: "hailuo-23-release",
+    title: "Hailuo 2.3 发布：AI 视频生成质量再创新高",
+    date: "2025-03-28",
+    tag: "产品发布",
+    image: "/images/news/hailuo23.jpg",
+    excerpt: "Hailuo 2.3 在视频质量、时长和一致性方面实现全面提升。",
+    content: "MiniMax 发布 Hailuo 2.3 视频生成模型。新版本在视频生成质量、最大时长和角色一致性方面均实现了显著提升。Hailuo 2.3 支持生成更长时长的高质量视频，角色和场景的一致性得到了大幅改善。",
+  },
+  {
+    slug: "speech-28-release",
+    title: "Speech 2.8：赋予 AI 语音「人的温度」",
+    date: "2025-03-20",
+    tag: "技术突破",
+    image: "/images/news/speech28.jpg",
+    excerpt: "Speech 2.8 在情感表达、语调自然度和多语言支持方面取得突破。",
+    content: "MiniMax 发布 Speech 2.8 语音合成模型。新版本在情感表达的丰富度和自然度上实现了重大突破，能够根据文本内容自动调整语调、语速和情感，让 AI 语音更具「人的温度」。",
+  },
+  {
+    slug: "token-plan-launch",
+    title: "MiniMax 开放平台推出 Token Plan 开发者套餐",
+    date: "2025-03-15",
+    tag: "平台更新",
+    image: "/images/news/tokenplan.jpg",
+    excerpt: "灵活的 Token 计费方案，为开发者提供超高性价比的 AI 能力接入。",
+    content: "MiniMax 开放平台正式推出 Token Plan 开发者套餐。新的计费方案提供按量计费和套餐优惠两种模式，满足不同规模开发者的需求。企业客户还可以获得专属定制方案。",
+  },
+];

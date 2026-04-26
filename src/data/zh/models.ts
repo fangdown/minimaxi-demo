@@ -1,0 +1,56 @@
+import type { ModelCard } from "../types";
+
+export const models: ModelCard[] = [
+  {
+    id: "m27",
+    name: "M2.7",
+    category: "文本",
+    description: "最新一代文本模型，支持 Agent Harness、强 Coding 能力",
+    image: "/images/models/m27.jpg",
+    href: "/models/text/m27",
+    isNew: true,
+  },
+  {
+    id: "music-26",
+    name: "Music 2.6",
+    category: "音乐",
+    description: "AI 音乐创作，支持 Cover 翻唱与器乐生成",
+    image: "/images/models/music26.jpg",
+    href: "/models/music/26",
+    isNew: true,
+  },
+  {
+    id: "hailuo-23",
+    name: "Hailuo 2.3",
+    category: "视频",
+    description: "高质量 AI 视频生成，更长时长更精准",
+    image: "/images/models/hailuo23.jpg",
+    href: "/models/video/23",
+    isNew: true,
+  },
+  {
+    id: "speech-28",
+    name: "Speech 2.8",
+    category: "语音",
+    description: "超拟人语音合成，赋予 AI 语音人的温度",
+    image: "/images/models/speech28.jpg",
+    href: "/models/speech/28",
+    isNew: true,
+  },
+  {
+    id: "m2-her",
+    name: "M2-Her",
+    category: "文本",
+    description: "专为情感交互优化的对话模型",
+    image: "/images/models/m2her.jpg",
+    href: "/models/text/m2her",
+  },
+  {
+    id: "mcp-server",
+    name: "MCP Server",
+    category: "工具",
+    description: "模型上下文协议服务，连接 AI 与外部工具",
+    image: "/images/models/mcp.jpg",
+    href: "/models/mcp",
+  },
+];
