@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: "/minimaxi-demo",
+  trailingSlash: true,
 };
 
 export default nextConfig;
