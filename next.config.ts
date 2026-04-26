@@ -3,7 +3,6 @@ import { BASE_PATH } from "./src/lib/basePath";
 
 const nextConfig: NextConfig = {
   ...(BASE_PATH ? { basePath: BASE_PATH } : {}),
-  trailingSlash: true,
   async redirects() {
     if (!BASE_PATH) return [];
     // Map domain root to the app root; middleware then sends `/minimaxi-demo/` → `/minimaxi-demo/zh/`
